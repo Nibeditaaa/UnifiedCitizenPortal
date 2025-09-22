@@ -1,0 +1,13 @@
+.register-btn{
+    background-color: orange;
+    border: 0;
+}
+
+.register-btn:hover{
+    background-color: rgb(221, 144, 2) !important;
+}
+
+.register-btn:active{
+    background-color: rgb(179, 117, 2) !important;
+}
+

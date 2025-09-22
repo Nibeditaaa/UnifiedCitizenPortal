@@ -1,0 +1,12 @@
+.Sidebar-Announcement-date-posted {
+  margin-right: 1rem;
+}
+
+.sidebar-announcement input,.sidebar-announcement textarea{
+  background-color: #DDE6ED;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+

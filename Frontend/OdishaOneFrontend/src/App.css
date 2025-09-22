@@ -1,0 +1,15 @@
+body{
+  background-color: #fffaeb;
+}
+
+/* Main container that wraps everything */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Content should take up all available space */
+.content {
+  flex: 1; /* Pushes the footer down */
+}

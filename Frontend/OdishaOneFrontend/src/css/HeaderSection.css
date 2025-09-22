@@ -1,0 +1,39 @@
+.section-box {
+  height: 35vh;
+}
+
+.banner-hero {
+  height: 100%;
+}
+
+.brand-name{
+  background-color: white;
+  padding: 10%;
+  border-radius: 25px;
+  color: orange;
+}
+
+.header-back-btn{
+  background-color: orange;
+  border-radius: 25px;
+  border: 0;
+}
+
+.header-back-btn:hover{
+  background-color: rgb(221, 144, 2) !important;
+}
+
+.header-back-btn:active{
+  background-color: rgb(179, 117, 2) !important;
+}
+
+.header-h3{
+  margin-top: 35%;
+  color: orange;
+}
+
+@media (max-width: 992px){
+  .section-box {
+    height: 30vh;
+  }
+}

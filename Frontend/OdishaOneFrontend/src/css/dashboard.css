@@ -1,0 +1,155 @@
+:root {
+  /* 27374D */
+  /* 526D82 */
+  /* 9DB2BF */
+  /* DDE6ED */
+  
+  --primary-color-1: #2D5C7F;
+  --primary-color-2: #fff1a8bb;
+  --secondary-color-1: #9DB2BF;
+  --secondary-color-2: #DDE6ED;
+  --text-color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
+  border-right: 1px solid #555;
+  background-color: var(--primary-color-1);
+  color: var(--text-color);
+  overflow-y: auto; /* Enable scrolling for long sidebars */
+}
+
+.sidebar-closed {
+  transform: translateX(-100%);
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  height: 57px; /* Adjust based on your Navbar height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color-1);
+  border-bottom: 1px solid #555;
+}
+
+.sidebar-header h4 {
+  margin: 0;
+}
+
+/* Sidebar Links */
+.sidebar-link {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color: var(--secondary-color-1);
+  color: var(--text-color);
+}
+
+.sidebar-link:focus {
+  background-color: var(--secondary-color-1);
+  color: var(--text-color);
+}
+
+/* Main content layout */
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+  margin-left: 250px;
+  height: 100vh;
+  overflow: hidden; /* Prevents body scroll */
+  background-color: var(--primary-color-2);
+  flex: 1;
+}
+
+.dashboard-content-expand {
+  margin-left: 0;
+}
+
+/* Navbar fixed at the top */
+.navbar-custom {
+  background-color: var(--primary-color-1);
+  color: var(--text-color);
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  z-index: 1050;
+  border-bottom: 1px solid #555;
+  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.dashboard-content-expand .navbar-custom {
+  left: 0;
+  width: 100%;
+}
+
+/* Breadcrumb fixed below the navbar */
+.breadcrumb-custom {
+  position: fixed;
+  top: 56px; /* Adjust based on navbar height */
+  left: 250px;
+  width: calc(100% - 250px);
+  --bs-bg-opacity: 1;
+  background-color: var(--primary-color-1);
+  color: black;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #555;
+  z-index: 1040;
+  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.dashboard-content-expand .breadcrumb-custom {
+  left: 0;
+  width: 100%;
+}
+
+/* Scrollable content area */
+.dashboard-scrollable-content {
+  flex: 1;
+  margin-top: 114px; /* Space for fixed navbar + breadcrumb */
+  padding: 50px;
+  overflow-y: auto;
+  height: calc(100vh - 96px); /* Adjust height */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.dashboard-scrollable-content::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Breadcrumb Styling */
+.breadcrumb-custom .breadcrumb-item a {
+  color: var(--text-color);
+}
+
+.breadcrumb-custom .breadcrumb-item.active {
+  color: grey;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--text-color) !important;
+}
+
+ol.breadcrumb {
+  margin: 0.5rem 0;
+}

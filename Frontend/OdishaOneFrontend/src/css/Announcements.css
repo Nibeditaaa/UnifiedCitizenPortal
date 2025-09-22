@@ -1,0 +1,75 @@
+.announcements-container {
+  width: 800px;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.announcements-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: orange;
+}
+
+.announcements-viewport {
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+}
+
+.announcements-card {
+  background-color: #f8f9fa;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  height: fit-content;
+  flex-shrink: 0;
+}
+
+.announcement-img {
+    height: 50px;
+    width: auto;
+    transition: height 0.3s ease;
+  }  
+
+.announcements-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.announcements-date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.announcements-body {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.announcements-scrollArea {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-up 20s linear infinite;
+  padding: 0.5rem 1rem;
+}
+
+.announcements-viewport:hover .announcements-scrollArea {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

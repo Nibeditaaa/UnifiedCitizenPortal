@@ -1,0 +1,64 @@
+/* selector for the navbar links*/
+.navbar-nav .nav-link {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+}
+
+/* selector for the navbar links when on hover */
+.navbar-nav .nav-link:hover {
+  color: orange !important; /* Change text color on hover */
+}
+
+/* selector for the navbar links when it is active */
+.navbar-nav .nav-link.active {
+  padding-bottom: 16px;
+  border-bottom: 4px solid orange;
+}
+
+/* selector for login button */
+.navbar-nav .btn-outline-success {
+  border-color: orange !important;
+  color: orange !important;
+}
+
+/* selector for login button when cursor is hovering */
+.navbar-nav .btn-outline-success:hover {
+  background-color: orange !important;
+  border-color: orange !important; 
+  color: white !important; 
+}
+
+/* selector for login button when it is active */
+.navbar-nav .btn-orange {
+  background-color: orange !important;
+  color: white !important;
+  border: none !important;
+}
+
+/* login button selector When the navbar is collapsed only */
+.navbar-collapse.show .btn{
+  margin: 10px 0 !important;
+}
+
+
+.merienda-logo {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.icon-gradient-text {
+  background: linear-gradient(to bottom right, #E56500, #EBC51D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text take the gradient */
+}
+
+/* remove padding from profile image */
+#profile-dropdown{
+  padding-top: 0;
+  padding-bottom: 0;
+}

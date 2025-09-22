@@ -1,0 +1,16 @@
+.about-us-container{
+    font-family: Arial, sans-serif;
+}
+
+.about-us-container h1{
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.about-us-container h3{
+    color: rgb(235, 153, 1);
+    margin-bottom: 1%;
+    margin-top: 3%;
+}

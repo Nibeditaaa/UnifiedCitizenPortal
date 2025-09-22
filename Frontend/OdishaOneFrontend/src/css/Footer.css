@@ -1,0 +1,33 @@
+/* Ensure the page takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer stays at the bottom */
+.footer {
+  background-color: orange;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .nav-link {
+  color: white !important;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.footer .nav-link:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
